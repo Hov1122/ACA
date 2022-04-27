@@ -19,7 +19,6 @@ Array.prototype.find = function (cb, thisValue = undefined) {
             return this[i];
         }
     }
-    return undefined;
 };
 
 console.log("find      ", arr.find(e => e < 0));
@@ -70,11 +69,16 @@ console.log("some    ", arr.some(e => e == 0));
 Array.prototype.every = function (cb, thisValue = undefined) {
   // implementation
   if (typeof(cb) !== 'function') throw new TypeError(`${cb} is not a function`);
+  if (this.length === 0) return true;
 
+  let isEmpty = true;
   for (let i = 0; i < this.length; i++) 
-    if (typeof(this[i]) !== 'undefined' && !cb.call(thisValue, this[i], i, this))
-      return false;
-  return true;
+    if (typeof(this[i]) !== 'undefined') {
+       isEmpty = false;
+       if(!cb.call(thisValue, this[i], i, this))
+          return false;
+      }
+  return !isEmpty;
 };
 
 console.log("every    ", arr.every(e => e != 0));
