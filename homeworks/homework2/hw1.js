@@ -14,7 +14,7 @@ function solution(grid) {
     const counts = {subGridIndex: {}};
 
     for (let i = 0; i < grid.length; i++) {
-        counts['row' + i] = counts['row' + i] || new Set();
+        counts['row' + i] = new Set();
         for (let j = 0; j < grid[i].length; j++) {
             if(grid[i][j] === ".") 
                 continue;
