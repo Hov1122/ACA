@@ -3,8 +3,6 @@
 // Implement an algorithm that will check whether the given grid of numbers represents a valid Sudoku puzzle according to the layout rules described above.
 // Note that the puzzle represented by grid does not have to be solvable.
 
-// the output should be true
-
 function solution(grid) {
     // Implementation
 
