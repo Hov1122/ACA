@@ -9,10 +9,14 @@ function solution(grid) {
     if (!Array.isArray(grid) || grid.length !== 9 || grid.some((row) => row.length !== 9))
         throw new TypeError("Invalid arguments")
 
-    const counts = {subGridIndex: {}};
+    const counts = {
+        subGridIndex: {},
+        rows: {},
+        cols: {}          
+    };
 
     for (let i = 0; i < grid.length; i++) {
-        counts['row' + i] = new Set();
+        counts.rows[i] = new Set();
         for (let j = 0; j < grid[i].length; j++) {
             if(grid[i][j] === ".") 
                 continue;
@@ -20,24 +24,25 @@ function solution(grid) {
                 throw new TypeError("Invalid arguments")
                 
             counts.subGridIndex[`${Math.floor(i / 3)}${Math.floor(j / 3)}`] = counts.subGridIndex[`${Math.floor(i / 3)}${Math.floor(j / 3)}`] || new Set();
-            counts['col' + j] = counts['col' + j] || new Set();
+            counts.cols[j] = counts.cols[j] || new Set();
 
             if (counts.subGridIndex[`${Math.floor(i / 3)}${Math.floor(j / 3)}`].has(grid[i][j])) 
                 return false;              
             else 
                 counts.subGridIndex[`${Math.floor(i / 3)}${Math.floor(j / 3)}`].add(grid[i][j])
 
-            if (counts['row' + i].has(grid[i][j])) 
+            if (counts.rows[i].has(grid[i][j])) 
                 return false;                 
             else 
-                counts['row' + i].add(grid[i][j]);
+                counts.rows[i].add(grid[i][j]);
 
-            if (counts['col' + j].has(grid[i][j])) 
+            if (counts.cols[j].has(grid[i][j])) 
                 return false;               
             else 
-                counts['col' + j].add(grid[i][j]);
+                counts.cols[j].add(grid[i][j]);
         }
     }
+
     return true;
   }
 
