@@ -8,69 +8,69 @@
 // i.e. each city has the same number of incoming and outgoing roads. As the Hand of the King, you're the one who he has decreed must check his calculations.
 
 function solution(roadRegister) {
-    // Implementation
-    if (!Array.isArray(roadRegister))
-      throw new TypeError("Invalid arugemt");
+	// Implementation
+	if (!Array.isArray(roadRegister))
+		throw new TypeError("Invalid arugemt");
 
-    return roadRegister.every((row, i) => {
-      let inCount = 0;
-      let outCount = 0;
-      row.forEach((col, j) => {
-        inCount += roadRegister[j][i];
-        outCount += roadRegister[i][j];
-      })
-      return inCount === outCount;
-    })
-        
-    // roadsCount = {};
-    // for (let i = 0; i < roadRegister.length; i++) {
-    //     roadsCount[i + '_in'] = 0;
-    //     roadsCount[i + '_out'] = 0;
-    // }
+	return roadRegister.every((row, i) => {
+		let inCount = 0;
+		let outCount = 0;
+		row.forEach((col, j) => {
+			inCount += roadRegister[j][i];
+			outCount += roadRegister[i][j];
+		})
+		return inCount === outCount;
+	})
 
-    // roadRegister.forEach((row, rowIndex) => {
-    //     row.forEach((col, colIndex) => {
-    //         if (roadRegister[rowIndex][colIndex]) {
-    //             roadsCount[rowIndex + '_out']++;
-    //             roadsCount[colIndex + '_in']++;
-    //         }
-    //     })
-    // })
+	// roadsCount = {};
+	// for (let i = 0; i < roadRegister.length; i++) {
+	//     roadsCount[i + '_in'] = 0;
+	//     roadsCount[i + '_out'] = 0;
+	// }
 
-    // for (let i = 0; i < roadRegister.length; i++) {
-    //     if (roadsCount[i + '_in'] !== roadsCount[i + '_out'])
-    //         return false;
-    // } 
-    
-    // return true;
+	// roadRegister.forEach((row, rowIndex) => {
+	//     row.forEach((col, colIndex) => {
+	//         if (roadRegister[rowIndex][colIndex]) {
+	//             roadsCount[rowIndex + '_out']++;
+	//             roadsCount[colIndex + '_in']++;
+	//         }
+	//     })
+	// })
 
-    
-  }
+	// for (let i = 0; i < roadRegister.length; i++) {
+	//     if (roadsCount[i + '_in'] !== roadsCount[i + '_out'])
+	//         return false;
+	// } 
+
+	// return true;
+
+
+}
 
 // the output should be true
 const roadRegister1 = [
-  [false, true, false, false],
-  [false, false, true, false],
-  [true, false, false, true],
-  [false, false, true, false],
+	[false, true, false, false],
+	[false, false, true, false],
+	[true, false, false, true],
+	[false, false, true, false],
 ];
 
 // the output should be true
 const roadRegister2 = [
-  [false, true, false, false, false, false, false],
-  [true, false, false, false, false, false, false],
-  [false, false, false, true, false, false, false],
-  [false, false, true, false, false, false, false],
-  [false, false, false, false, false, false, true],
-  [false, false, false, false, true, false, false],
-  [false, false, false, false, false, true, false],
+	[false, true, false, false, false, false, false],
+	[true, false, false, false, false, false, false],
+	[false, false, false, true, false, false, false],
+	[false, false, true, false, false, false, false],
+	[false, false, false, false, false, false, true],
+	[false, false, false, false, true, false, false],
+	[false, false, false, false, false, true, false],
 ];
 
 // the output should be false
 const roadRegister = [
-  [false, true, false],
-  [false, false, false],
-  [true, false, false],
+	[false, true, false],
+	[false, false, false],
+	[true, false, false],
 ];
 
-  console.log(solution(roadRegister1), solution(roadRegister2), solution(roadRegister));
+console.log(solution(roadRegister1), solution(roadRegister2), solution(roadRegister));
