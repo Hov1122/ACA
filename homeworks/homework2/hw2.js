@@ -12,27 +12,42 @@ function solution(roadRegister) {
     if (!Array.isArray(roadRegister))
       throw new TypeError("Invalid arugemt");
 
-    roadsCount = {};
     for (let i = 0; i < roadRegister.length; i++) {
-        roadsCount[i + '_in'] = 0;
-        roadsCount[i + '_out'] = 0;
+      let inCount = 0; 
+      let outCount = 0;
+      for (let j = 0; j < roadRegister[i].length; j++) {
+          inCount += roadRegister[j][i];
+          outCount += roadRegister[i][j];
+      }
+
+      if (inCount !== outCount)
+        return false;
     }
-
-    roadRegister.forEach((row, rowIndex) => {
-        row.forEach((col, colIndex) => {
-            if (roadRegister[rowIndex][colIndex]) {
-                roadsCount[rowIndex + '_out']++;
-                roadsCount[colIndex + '_in']++;
-            }
-        })
-    })
-
-    for (let i = 0; i < roadRegister.length; i++) {
-        if (roadsCount[i + '_in'] !== roadsCount[i + '_out'])
-            return false;
-    } 
-    
     return true;
+        
+    // roadsCount = {};
+    // for (let i = 0; i < roadRegister.length; i++) {
+    //     roadsCount[i + '_in'] = 0;
+    //     roadsCount[i + '_out'] = 0;
+    // }
+
+    // roadRegister.forEach((row, rowIndex) => {
+    //     row.forEach((col, colIndex) => {
+    //         if (roadRegister[rowIndex][colIndex]) {
+    //             roadsCount[rowIndex + '_out']++;
+    //             roadsCount[colIndex + '_in']++;
+    //         }
+    //     })
+    // })
+
+    // for (let i = 0; i < roadRegister.length; i++) {
+    //     if (roadsCount[i + '_in'] !== roadsCount[i + '_out'])
+    //         return false;
+    // } 
+    
+    // return true;
+
+    
   }
 
 // the output should be true
