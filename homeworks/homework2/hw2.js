@@ -12,18 +12,15 @@ function solution(roadRegister) {
     if (!Array.isArray(roadRegister))
       throw new TypeError("Invalid arugemt");
 
-    for (let i = 0; i < roadRegister.length; i++) {
-      let inCount = 0; 
+    return roadRegister.every((row, i) => {
+      let inCount = 0;
       let outCount = 0;
-      for (let j = 0; j < roadRegister[i].length; j++) {
-          inCount += roadRegister[j][i];
-          outCount += roadRegister[i][j];
-      }
-
-      if (inCount !== outCount)
-        return false;
-    }
-    return true;
+      row.forEach((col, j) => {
+        inCount += roadRegister[j][i];
+        outCount += roadRegister[i][j];
+      })
+      return inCount === outCount;
+    })
         
     // roadsCount = {};
     // for (let i = 0; i < roadRegister.length; i++) {
