@@ -1,0 +1,35 @@
+.dog-breeds {
+    margin-top: 20px;
+    border-radius: 7px;
+    padding: 10px;
+    display: inline;
+}
+
+.dog-img {
+    width: 700px;
+    height: 600px;
+    animation: dogAnimation 1.5s linear;
+}
+
+.img {
+    width: 700px;
+    height: 600px;
+    border: 2px solid;
+    border-radius: 7px;
+    padding: 3px;
+}
+
+.refresh {
+    margin-left: 20px;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+@keyframes dogAnimation {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0,0%);
+    }
+}

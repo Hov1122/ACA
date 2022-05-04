@@ -22,7 +22,7 @@ class Stack {
     }
 }
 
-function debounce(fn, delay = 100) {
+function debounce(fn, delay = 500) {
     let timeoutId;
     
     return function(...args) {
@@ -36,23 +36,47 @@ const inputs = document.querySelectorAll("input.text");
 const stack = new Stack();
 //const prevValues = {};
 
-const addToStack = debounce((i, e) => {
-//    prevValues[i] = e.target.value 
-    stack.push([i, e.target.value]);
+const addToStack = debounce((i, start, end, val) => {
+//    prevValues[i] = e.target.value
+console.log(start, end)
+    if (start > end)
+        val = val.substring(end, start);
+    console.log(val)
+    stack.push([i, start, end, val]);
 })
 
 function undo() {
     if (stack.isEmpty()) 
         return;
-    const [i, val] = stack.pop();
-    inputs[i].value = '';
+    const [i, start, end, val] = stack.pop();
+
+    
+    if (start > end) {
+        inputs[i].value = inputs[i].value = inputs[i].value.substring(0, end) + val.substring(end, start) + inputs[i].value.substring(start);
+    }
+       
+    else 
+        inputs[i].value = inputs[i].value = inputs[i].value.substring(0, start) + inputs[i].value.substring(end);
 }
 
 document.getElementById("undo").addEventListener('click', undo);
 
 inputs.forEach((input, i) => {
    // prevValues[i] = '';
-    input.addEventListener('input', (e) => addToStack(i, e));
+   let start = input.value.length;
+   input.addEventListener('click', (event) => {
+    start = input.selectionStart;
+  });
+    input.addEventListener('input', (e) => addToStack(i, start, input.selectionEnd, e.target.value));
+    input.addEventListener('keydown', debounce(function(event) {
+        const key = event.key; // "ArrowRight", "ArrowLeft", "ArrowUp", or "ArrowDown"
+        if (key === "ArrowLeft" || key === "ArrowRight" || key === "Backspace") {
+            start = input.selectionStart;
+            console.log(start);
+        }
+            
+    }));
+    
 })
 
 
