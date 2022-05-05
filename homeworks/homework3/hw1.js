@@ -7,7 +7,7 @@ const sort = (input) => {
   const from = Math.min(...input);
   const to = Math.max(...input) + 1;
 
-  const countOfOccur = Array(Math.abs(to - from)).fill(0);
+  const countOfOccur = Array(to - from).fill(0);
   input.forEach((_, i) => countOfOccur[input[i] - from]++)
 
   const sorted = [];
