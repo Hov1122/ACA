@@ -13,10 +13,8 @@ const sort = (input) => {
   const sorted = [];
 
   for (let i = from; i < to; i++) {
-    while(countOfOccur[i - from] > 0) {
+    for (let j = 0; j < countOfOccur[i - from]; j++)
       sorted.push(i);
-      countOfOccur[i - from]--;
-    }
   }
 
   return sorted;
