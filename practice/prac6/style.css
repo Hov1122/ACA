@@ -1,0 +1,19 @@
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    flex-direction: column;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
