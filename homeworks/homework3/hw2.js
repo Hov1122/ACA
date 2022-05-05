@@ -1,7 +1,7 @@
 // We have number of chess players and some finished matches,
 // you should write a function and find out which players should play together
 
-// The matches should be returned in an sorted array, with each match stored as [m-i, m-j], where m-i < m-j
+// The matches should be returned in a sorted array, with each match stored as [m-i, m-j], where m-i < m-j
 
 // Example
 // For chessPlayers = 4 and finishedMatches = [[0, 1], [1, 2], [2, 0]]
@@ -11,13 +11,12 @@
 const solution = (chessPlayers, finishedMatches) => {
     // your code
 
-    const initMatches = Array(chessPlayers).fill().map(() => Array(chessPlayers).fill(false));
-	
-    const playerMatches = finishedMatches.reduce((played, match) => {
-		played[match[0]][match[1]] = true;
-		played[match[1]][match[0]] = true;
-        return played;
-    }, initMatches)
+    const playerMatches = Array(chessPlayers).fill().map(() => Array(chessPlayers).fill(false));
+
+	finishedMatches.forEach((match) => {
+		playerMatches[match[0]][match[1]] = true;
+		playerMatches[match[1]][match[0]] = true;
+	})
 
 	const res = [];
 
@@ -30,4 +29,4 @@ const solution = (chessPlayers, finishedMatches) => {
 	return res;
   };
 
-  console.log(solution(4, [[0, 1], [1, 2], [2, 0]]));
+  console.log(solution(5, [[0, 1], [1, 2], [2, 0], [2, 4]]));
