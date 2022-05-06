@@ -11,7 +11,6 @@ export const App = () => {
     window.state = state;
 
     const container = document.createElement('div');
-    container.classList.add('posts-container')
     container.setAttribute("component-name", "main-container");
     
   //  container.innerHtml = "Hello";

@@ -213,10 +213,17 @@
 // fn();
 // console.log(fn.prototype.count);
 
-const p = new Promise((res, rej) => {
-    setTimeout(() => {res(2); 
-        console.log("done")}, 1000);
-    
-})
+// const p = new Promise((res, rej) => {
+//     setTimeout(() => {res(2);
+//         console.log("done")}, 1000);
+//
+// })
+//
+// console.log(p)
+function c () {
+    var b = 5;
+}
+c();
+let d = 4;
 
-console.log(p)
+var a = '4'; // window
