@@ -12,10 +12,16 @@
 
 
 import { App } from './components/App.js'
+import { showAlbums } from './helpers.js'
 
 window.addEventListener('load', init);
 
-function init() {
+async function init() {
 	const root = document.querySelector('#root');
-	root.appendChild(App());
+	const data = await App();
+	root.append(data);
+
+	const btns = document.querySelectorAll("#root div .albums-container .album .album-title");
+	for (let i = 0; i < btns.length; i++)
+		btns[i].addEventListener('click', showAlbums)
 }

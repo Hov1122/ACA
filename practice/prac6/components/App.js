@@ -1,40 +1,32 @@
 //import {Items} from './Items.js'
 import {fetchData} from '../helpers.js'
-import {Posts} from "./Posts.js"
+// import {Posts} from "./Posts.js"
+// import {Users} from './Users.js'
+import {Albums} from './Albums.js'
 
-export const App = () => {
+export const App = async () => {
     const state = {
         //nums: []
         posts: [],
+        users: [],
+        albums: [],
     };
-
-    window.state = state;
 
     const container = document.createElement('div');
     container.setAttribute("component-name", "main-container");
-    
-  //  container.innerHtml = "Hello";
 
     const render = () => {
         // tarmancum a (jnjum a taza avelacnum)
-        container.innerHTML = "";
-        container.appendChild(Posts(state.posts));
+        //container.innerHTML = "";
+        //container.append(Posts(state.posts));
+        container.append(Albums(state.albums));
+        return container;
         //container.appendChild(Items(state.nums));
     }
 
-    fetchData('/posts')
+    return fetchData('/albums')
         .then(response => {
-            console.log(response)
-            state.posts = response;
-            render();
+            state.albums = response;
+            return render();
         })
-
-    render();
-
-    // setInterval(() => {
-    //     state.nums.push(Math.floor(Math.random() * 1000));
-    //     render();
-    // }, 3000)
-
-    return container;
 }
