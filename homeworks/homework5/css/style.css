@@ -1,0 +1,1091 @@
+/*.license-container {*/
+/*    position: absolute;*/
+/*    width: 90px;*/
+/*    height: 19px;*/
+/*    left: 47px;*/
+/*    top: 129px;*/
+
+/*    !*color: #D6DDDE;*!*/
+
+/*    opacity: 0.6;*/
+/*}*/
+
+:root {
+    --text-color: #D6DDDE;
+}
+
+body {
+    background-color: #1f2224;
+}
+
+.license-container {
+    color: var(--text-color);
+    padding: 10px;
+    display: flex;
+    /*justify-content: end;*/
+}
+
+.license-container__logo {
+    /*flex-basis: 40px*/
+    padding: 10px;
+}
+
+.license-container__name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    flex-grow: 6;
+    /*flex-basis: 10px;*/
+    /* identical to box height */
+}
+
+.menu-container {
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid #fff;
+    /*color: var(--text-color);*/
+}
+
+
+.menu-container__item {
+    margin-left: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.menu-container__item:focus {
+    border-bottom: 5px solid blue;
+}
+
+.license-container__btn--upgrade {
+    background: #18A7FF;
+    border-radius: 4px;
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.license-container__btn--upgrade:hover {
+    background: #148ad2;
+}
+
+.license-container__btn--upgrade:active {
+    background: #0f5681;
+}
+
+h3 {
+    color: var(--text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+}
+/*!* Outright *!*/
+
+
+/*position: absolute;*/
+/*width: 58px;*/
+/*height: 19px;*/
+/*left: 200px;*/
+/*top: 129px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.6;*/
+
+
+/*!* Offline Activation *!*/
+
+
+/*position: absolute;*/
+/*width: 122px;*/
+/*height: 19px;*/
+/*left: 321px;*/
+/*top: 129px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* divline2 *!*/
+
+
+/*position: absolute;*/
+/*width: 1000px;*/
+/*height: 1px;*/
+/*left: 33px;*/
+/*top: 171px;*/
+
+/*background: rgba(139, 144, 145, 0.25);*/
+
+
+/*!* active pill *!*/
+
+
+/*position: absolute;*/
+/*width: 144px;*/
+/*height: 2px;*/
+/*left: 311px;*/
+/*top: 170px;*/
+
+/*background: #18A7FF;*/
+
+
+/*!* Rectangle 15 *!*/
+
+
+/*position: absolute;*/
+/*width: 48px;*/
+/*height: 48px;*/
+/*left: 652px;*/
+/*top: 29px;*/
+
+/*background: #499861;*/
+/*border-radius: 2px;*/
+
+
+/*!* Rectangle 16 *!*/
+
+
+/*position: absolute;*/
+/*width: 48px;*/
+/*height: 48px;*/
+/*left: 732px;*/
+/*top: 29px;*/
+
+/*background: #598B8D;*/
+/*opacity: 0.25;*/
+/*border-radius: 2px;*/
+
+
+/*!* Rectangle 17 *!*/
+
+
+/*position: absolute;*/
+/*width: 48px;*/
+/*height: 48px;*/
+/*left: 812px;*/
+/*top: 29px;*/
+
+/*background: #DA9422;*/
+/*opacity: 0.25;*/
+/*border-radius: 2px;*/
+
+
+/*!* Rectangle 18 *!*/
+
+
+/*position: absolute;*/
+/*width: 56px;*/
+/*height: 20px;*/
+/*left: 728px;*/
+/*top: 39px;*/
+
+/*background: linear-gradient(0deg, #131718, #131718), linear-gradient(0deg, #131718, #131718), linear-gradient(0deg, #131718, #131718), linear-gradient(0deg, #131718, #131718), #131718;*/
+/*opacity: 0.25;*/
+
+
+/*!* Rectangle 19 *!*/
+
+
+/*position: absolute;*/
+/*width: 56px;*/
+/*height: 20px;*/
+/*left: 648px;*/
+/*top: 39px;*/
+
+/*background: linear-gradient(0deg, #131718, #131718), linear-gradient(0deg, #131718, #131718), linear-gradient(0deg, #131718, #131718), linear-gradient(0deg, #131718, #131718), #131718;*/
+
+
+/*!* Rectangle 20 *!*/
+
+
+/*position: absolute;*/
+/*width: 56px;*/
+/*height: 20px;*/
+/*left: 808px;*/
+/*top: 39px;*/
+
+/*background: linear-gradient(0deg, #131718, #131718), linear-gradient(0deg, #131718, #131718), linear-gradient(0deg, #131718, #131718), linear-gradient(0deg, #131718, #131718), #131718;*/
+/*opacity: 0.25;*/
+
+
+/*!* FREE *!*/
+
+
+/*position: absolute;*/
+/*width: 33px;*/
+/*height: 16px;*/
+/*left: 659px;*/
+/*top: 41px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 14px;*/
+/*line-height: 16px;*/
+/*text-align: center;*/
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* PRO *!*/
+
+
+/*position: absolute;*/
+/*width: 28px;*/
+/*height: 16px;*/
+/*left: 741px;*/
+/*top: 41px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 14px;*/
+/*line-height: 16px;*/
+/*text-align: center;*/
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.25;*/
+
+
+/*!* VIP *!*/
+
+
+/*position: absolute;*/
+/*width: 22px;*/
+/*height: 16px;*/
+/*left: 824px;*/
+/*top: 41px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 14px;*/
+/*line-height: 16px;*/
+/*text-align: center;*/
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.25;*/
+
+
+/*!* Licenses *!*/
+
+
+/*position: absolute;*/
+/*width: 111px;*/
+/*height: 33px;*/
+/*left: 33px;*/
+/*top: 35px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 28px;*/
+/*line-height: 33px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Input background *!*/
+
+
+/*box-sizing: border-box;*/
+
+/*position: absolute;*/
+/*width: 952px;*/
+/*height: 44px;*/
+/*left: 81px;*/
+/*top: 362px;*/
+
+/*background: #1A1C1E;*/
+/*border-radius: 4px;*/
+
+
+/*!* Jenkins Pro *!*/
+
+
+/*position: absolute;*/
+/*width: 84px;*/
+/*height: 19px;*/
+/*left: 97px;*/
+/*top: 374px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Never *!*/
+
+
+/*position: absolute;*/
+/*width: 42px;*/
+/*height: 19px;*/
+/*left: 438px;*/
+/*top: 374px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Licenses *!*/
+
+
+/*position: absolute;*/
+/*width: 48px;*/
+/*height: 14px;*/
+/*left: 97px;*/
+/*top: 340px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 12px;*/
+/*line-height: 14px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.6;*/
+
+
+/*!* Expires *!*/
+
+
+/*position: absolute;*/
+/*width: 39px;*/
+/*height: 14px;*/
+/*left: 438px;*/
+/*top: 340px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 12px;*/
+/*line-height: 14px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.6;*/
+
+
+/*!* ID *!*/
+
+
+/*position: absolute;*/
+/*width: 12px;*/
+/*height: 14px;*/
+/*left: 346px;*/
+/*top: 261px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 12px;*/
+/*line-height: 14px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.6;*/
+
+
+/*!* Created date *!*/
+
+
+/*position: absolute;*/
+/*width: 69px;*/
+/*height: 14px;*/
+/*left: 438px;*/
+/*top: 258px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 12px;*/
+/*line-height: 14px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.6;*/
+
+
+/*!* Input background *!*/
+
+
+/*position: absolute;*/
+/*width: 952px;*/
+/*height: 44px;*/
+/*left: 81px;*/
+/*top: 414px;*/
+
+/*background: #1A1C1E;*/
+/*border-radius: 4px;*/
+
+
+/*!* Outfit Pro *!*/
+
+
+/*position: absolute;*/
+/*width: 68px;*/
+/*height: 19px;*/
+/*left: 97px;*/
+/*top: 426px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* 29 Jul 2021 *!*/
+
+
+/*position: absolute;*/
+/*width: 84px;*/
+/*height: 19px;*/
+/*left: 438px;*/
+/*top: 426px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Input background *!*/
+
+
+/*position: absolute;*/
+/*width: 1000px;*/
+/*height: 44px;*/
+/*left: 33px;*/
+/*top: 280px;*/
+
+/*background: #1A1C1E;*/
+/*border-radius: 4px;*/
+
+
+/*!* James-Main-Mackbook *!*/
+
+
+/*position: absolute;*/
+/*width: 168px;*/
+/*height: 19px;*/
+/*left: 77px;*/
+/*top: 293px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Active Licenses *!*/
+
+
+/*position: absolute;*/
+/*width: 84px;*/
+/*height: 14px;*/
+/*left: 608px;*/
+/*top: 258px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 12px;*/
+/*line-height: 14px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.6;*/
+
+
+/*!* System Name *!*/
+
+
+/*position: absolute;*/
+/*width: 75px;*/
+/*height: 14px;*/
+/*left: 49px;*/
+/*top: 258px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 12px;*/
+/*line-height: 14px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.6;*/
+
+
+/*!* Created date *!*/
+
+
+/*position: absolute;*/
+/*width: 69px;*/
+/*height: 14px;*/
+/*left: 438px;*/
+/*top: 489px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 12px;*/
+/*line-height: 14px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.6;*/
+
+
+/*!* Active Licenses *!*/
+
+
+/*position: absolute;*/
+/*width: 84px;*/
+/*height: 14px;*/
+/*left: 608px;*/
+/*top: 489px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 12px;*/
+/*line-height: 14px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+/*opacity: 0.6;*/
+
+
+/*!* 91520 *!*/
+
+
+/*position: absolute;*/
+/*width: 45px;*/
+/*height: 19px;*/
+/*left: 312px;*/
+/*top: 293px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* 01 Jan 2019 *!*/
+
+
+/*position: absolute;*/
+/*width: 89px;*/
+/*height: 19px;*/
+/*left: 438px;*/
+/*top: 293px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* 2 *!*/
+
+
+/*position: absolute;*/
+/*width: 9px;*/
+/*height: 19px;*/
+/*left: 683px;*/
+/*top: 293px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Input background *!*/
+
+
+/*position: absolute;*/
+/*width: 1000px;*/
+/*height: 44px;*/
+/*left: 33px;*/
+/*top: 512px;*/
+
+/*background: #1A1C1E;*/
+/*border-radius: 4px;*/
+
+
+/*!* Input background *!*/
+
+
+/*box-sizing: border-box;*/
+
+/*position: absolute;*/
+/*width: 1000px;*/
+/*height: 231px;*/
+/*left: 33px;*/
+/*top: 647px;*/
+
+/*background: rgba(22, 24, 25, 0.26);*/
+/*border: 1px dashed rgba(214, 221, 222, 0.26);*/
+/*border-radius: 4px;*/
+
+
+/*!* James-Laptop *!*/
+
+
+/*position: absolute;*/
+/*width: 103px;*/
+/*height: 19px;*/
+/*left: 77px;*/
+/*top: 525px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Choose a file to upload or drag it here   (jpg, png, max size 5mb) *!*/
+
+
+/*position: absolute;*/
+/*width: 270px;*/
+/*height: 38px;*/
+/*left: 401px;*/
+/*top: 783px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+
+/*color: #18A7FF;*/
+
+
+
+/*!* 1 *!*/
+
+
+/*position: absolute;*/
+/*width: 9px;*/
+/*height: 19px;*/
+/*left: 683px;*/
+/*top: 525px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* 84729 *!*/
+
+
+/*position: absolute;*/
+/*width: 45px;*/
+/*height: 19px;*/
+/*left: 312px;*/
+/*top: 525px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* 15 Jan 2020 *!*/
+
+
+/*position: absolute;*/
+/*width: 89px;*/
+/*height: 19px;*/
+/*left: 438px;*/
+/*top: 525px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Rectangle 152 *!*/
+
+
+/*position: absolute;*/
+/*width: 6px;*/
+/*height: 115px;*/
+/*left: 52px;*/
+/*top: 324px;*/
+
+/*background: #161819;*/
+
+
+/*!* Rectangle 153 *!*/
+
+
+/*position: absolute;*/
+/*width: 29px;*/
+/*height: 6px;*/
+/*left: 52px;*/
+/*top: 381px;*/
+
+/*background: #161819;*/
+
+
+/*!* Rectangle 154 *!*/
+
+
+/*position: absolute;*/
+/*width: 29px;*/
+/*height: 6px;*/
+/*left: 52px;*/
+/*top: 433px;*/
+
+/*background: #161819;*/
+
+
+/*!* Frame 45 *!*/
+
+
+/*!* Auto layout *!*/
+
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items: flex-start;*/
+/*padding: 6px 12px;*/
+/*gap: 10px;*/
+
+/*position: absolute;*/
+/*width: 113px;*/
+/*height: 31px;*/
+/*left: 807px;*/
+/*top: 287px;*/
+
+/*background: #499861;*/
+/*border-radius: 4px;*/
+
+
+/*!* Frame 49 *!*/
+
+
+/*!* Auto layout *!*/
+
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items: flex-start;*/
+/*padding: 6px 12px;*/
+/*gap: 10px;*/
+
+/*position: absolute;*/
+/*width: 96px;*/
+/*height: 31px;*/
+/*left: 919px;*/
+/*top: 368px;*/
+
+/*border-radius: 4px;*/
+
+
+/*!* Frame 50 *!*/
+
+
+/*!* Auto layout *!*/
+
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items: flex-start;*/
+/*padding: 6px 12px;*/
+/*gap: 10px;*/
+
+/*position: absolute;*/
+/*width: 96px;*/
+/*height: 31px;*/
+/*left: 919px;*/
+/*top: 420px;*/
+
+/*border-radius: 4px;*/
+
+
+/*!* Frame 46 *!*/
+
+
+/*!* Auto layout *!*/
+
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items: flex-start;*/
+/*padding: 6px 12px;*/
+/*gap: 10px;*/
+
+/*position: absolute;*/
+/*width: 82px;*/
+/*height: 31px;*/
+/*left: 935px;*/
+/*top: 287px;*/
+
+/*background: #CC4343;*/
+/*border-radius: 4px;*/
+
+
+/*!* Frame 47 *!*/
+
+
+/*!* Auto layout *!*/
+
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items: flex-start;*/
+/*padding: 6px 12px;*/
+/*gap: 10px;*/
+
+/*position: absolute;*/
+/*width: 113px;*/
+/*height: 31px;*/
+/*left: 807px;*/
+/*top: 518px;*/
+
+/*background: #499861;*/
+/*border-radius: 4px;*/
+
+
+/*!* Frame 48 *!*/
+
+
+/*!* Auto layout *!*/
+
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items: flex-start;*/
+/*padding: 6px 12px;*/
+/*gap: 10px;*/
+
+/*position: absolute;*/
+/*width: 82px;*/
+/*height: 31px;*/
+/*left: 935px;*/
+/*top: 518px;*/
+
+/*background: #CC4343;*/
+/*border-radius: 4px;*/
+
+
+/*!* Polygon 4 *!*/
+
+
+/*position: absolute;*/
+/*width: 12px;*/
+/*height: 10px;*/
+/*left: 61px;*/
+/*top: 307px;*/
+
+/*background: #D6DDDE;*/
+/*transform: rotate(-180deg);*/
+
+
+/*!* Polygon 5 *!*/
+
+
+/*position: absolute;*/
+/*width: 12px;*/
+/*height: 10px;*/
+/*left: 60px;*/
+/*top: 529px;*/
+
+/*background: #D6DDDE;*/
+/*transform: rotate(90deg);*/
+
+
+/*!* Systems *!*/
+
+
+/*position: absolute;*/
+/*width: 62px;*/
+/*height: 19px;*/
+/*left: 33px;*/
+/*top: 215px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Add System *!*/
+
+
+/*position: absolute;*/
+/*width: 86px;*/
+/*height: 19px;*/
+/*left: 33px;*/
+/*top: 604px;*/
+
+/*font-family: 'Roboto';*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*font-size: 16px;*/
+/*line-height: 19px;*/
+/*!* identical to box height *!*/
+
+
+/*color: #D6DDDE;*/
+
+
+
+/*!* Group 60 *!*/
+
+
+/*position: absolute;*/
+/*width: 40px;*/
+/*height: 40px;*/
+/*left: 513px;*/
+/*top: 715px;*/
+
+
+
+/*!* Frame 21 *!*/
+
+
+/*!* Auto layout *!*/
+
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items: flex-start;*/
+/*padding: 8px 20px;*/
+/*gap: 10px;*/
+
+/*position: absolute;*/
+/*width: 137px;*/
+/*height: 35px;*/
+/*left: 896px;*/
+/*top: 33px;*/
+
+/*background: #18A7FF;*/
+/*border-radius: 4px;*/
